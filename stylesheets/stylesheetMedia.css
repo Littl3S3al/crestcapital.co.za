@@ -1,3 +1,183 @@
-.frame-area{
-    height: 90vh;
+
+.bgImage{
+    width: 100%;
+}
+.page-title{
+    position: absolute;
+    top: 25vh;
+}
+.topImage{
+    width: 30%;
+}
+article{
+    background: #f2f2f2;
+    padding: 40px 10px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.media-image{
+    margin-bottom: 40px;
+}
+article a{
+    color: #ec6d62;
+    font-weight: 900;;
+}
+
+/* styles for the media articles individual pages */
+.article-headline{
+    margin-top: 10vh!important;
+}
+.media-menu{
+    position: fixed;
+    left: 0;
+    top: 45vh;
+    padding: 10px;
+    font-size: 2em;
+    border-radius: 0 5px 5px 0;
+}
+.media-menu a{
+    color: white;
+}
+.media-menu a:hover{
+    color: #ec6d62;
+}
+p.drop-cap:first-letter {
+    font-size: 4.5em;
+    float: left;
+    margin-top: -0.4em;
+    font-weight: 500;
+}
+.media-heading{
+    font-size: 2em;
+}
+section#article{
+    padding: 0 10px;
+    margin-top: 15vh;
+}
+b{
+    text-decoration: underline;
+}
+.media-graph{
+    max-width: 100%;
+}
+
+/* styles for podcast */
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0 !important;
+    border:0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+/* Pcast Player */
+/* Pcast Player */
+.pcast-player .pcast-player-controls {
+    box-sizing: border-box;
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+    height: 42px;
+    overflow: hidden;
+    padding: 5px;
+    width: 100%;
+  }
+  .pcast-player button {
+    background: #2a2a2a;
+    color: #fff;
+    border: 0;
+    border-radius: 2px;
+    padding: 5px;
+    line-height: 22px;
+    -webkit-appreance: none;
+    min-width: 32px;
+  }
+  .pcast-player progress {
+    height: 13px;
+    width: calc(100% - 281px);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  .pcast-player progress[value]::-webkit-progress-bar {
+    background-color: #555;
+    border-radius: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  }
+  .pcast-player progress[value]::-webkit-progress-value {
+    background: #fff;
+  }
+  .pcast-player .pcast-time {
+    display: inline-block;
+    font-size: 13px;
+    padding: 0 5px;
+    text-align: center;
+    width: 4em;
+  }
+  .pcast-player .pcast-speed {
+    width: 2.5em;
+  }
+  .pcast-player .pcast-download {
+    font-size: 12px;
+    margin-top: 0.5em;
+    display: inline-block;
+    color: black;
+  }
+  .pcast-player .pcast-download:hover, .pcast-player .pcast-download:focus {
+    color: #666;
+  }
+
+  .wrap-left{
+      float: left;
+      margin-right: 10px;
+  }
+  .wrap-right{
+    float: right;
+    margin-left: 10px;
+}
+
+/*--------------------------------------------------TABLETS*/
+@media only screen and (min-width: 768px) {
+    /* For tablets: */
+    .bgImage{
+        margin-top: 10vh;
+    }
+    .page-title{
+        top: 15vh;
+    }
+    .topImage{
+        width: 20%;
+    }
+    .media-image{
+        margin-bottom: 0;
+    }
+    section#article{
+        padding: 0 70px;
+    }
+}
+
+
+/*--------------------------------------------------DESKTOP: PORTRAIT*/
+@media only screen and (min-width: 992px) and (orientation : portrait) {
+    /* For desktop: */
+    .bgImage{
+        top: 120px;
+    }
+    .topImage{
+        width: 20%;
+    }
+}
+
+
+/*--------------------------------------------------DESKTOP*/
+@media only screen and (min-width: 992px) and (orientation : landscape) {
+    /* For desktop: */
+    .topImage{
+        width: 10%;
+    }
+
 }

@@ -9,23 +9,25 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!--custom stylesheet-->
-  <link rel="stylesheet" href="stylesheets/stylesheetTemplate.css">
-  <link rel="stylesheet" href="stylesheets/stylesheetMedia.css">
+    <link rel="stylesheet" href="stylesheets/stylesheetTemplate.css">
+    <link rel="stylesheet" href="stylesheets/stylesheetMedia.css">
 
-  <!--animate.css-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-  
-   <!--link to google fonts-->
-   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap" rel="stylesheet">
+    <!--animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    
+    <!--link to google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap" rel="stylesheet">
 
-  <!--animate on scroll-->
-  <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
+    <!--animate on scroll-->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
 
-  <!--Favicon-->
-  <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 
-    <title>About Crest Capital
-    </title>
+    <!-- link to fontawesome -->
+    <link rel="stylesheet" href="stylesheets/fontawesome/css/all.min.css">
+
+    <title>Crest Capital Media</title>
   </head>
   <body>
 
@@ -76,9 +78,74 @@
             </ul>
             <a class="btn btn-blue" href="contactus.html" role="button">CONTACT US</a>
         </div>
-    </nav>
+    </nav><!--navbar-->
 
-    <div class="container-fluid">
+    <!-- header -->
+    <header class="container-fluid">
+      <div class="row mb-5">
+          <img class="bgImage hideOnSmallScreen animated fadeInDown" src="images/serviceBgs/bgYellowDesktop.svg">
+          <img class="bgImage hideOnMobile hideOnDesktop animated fadeInDown" src="images/serviceBgs/bgYellowTablet.svg">
+          <img class="bgImage hideOnTablet animated fadeInDown" src="images/serviceBgs/bgYellowMobile.svg">
+      </div>
+      <div class="row page-title w-100">
+          <div class="col-sm-12 text-center animated fadeInUp">
+              <img class="topImage" src="images/media.png">
+              <h3>MEDIA</h3>
+          </div>
+      </div>
+  </header><!--header-->
+
+
+  <!-- articles -->
+  <section id="articles">
+    <div class="container">
+
+      <article class="row">
+        <!-- image -->
+        <div class="col-sm-4 media-image">
+          <a href="media/south-african-smes-hits-rock-bottom.html">
+            <img src="images/mediaImg/sme-hit-rock-bottom.jpg" alt="Graph hitting rock bottom" class="w-100">
+          </a>
+        </div>
+        <!-- text -->
+        <div class="col-sm-8">
+          <h5>Valuations of South African SME’s hit rock bottom</h5>
+          <small>
+            <i class="fas fa-clock"></i> 20/04/2020 
+            <i class="fas fa-folder"></i> keyword keyword keyword
+          </small>
+          <br><br>
+          <p>Crest Capital has tracked key pricing metrics of every company listed on the JSE since January 2010.  With the erosion of confidence in the South African economy throughout most of the past decade, now exasperated by the fear and uncertainty related to COVID-19, the pricing of South African SME’s has plummeted to fresh lows.
+          <br><br>
+          We explore the decline in key pricing metrics, and hence, valuations of local SME’s in two articles, Part 1 dealing with the price performance observed during the past decade, and Part 2, to be released in the last week of April, dealing with the impact on valuations of unfavourable developments in 2020... <a href="media/south-african-smes-hits-rock-bottom.html"><b>read more</b></a> </p> 
+        </div>
+      </article>
+
+      <article class="row">
+        <!-- image -->
+        <div class="col-sm-4 media-image">
+          <a href="media/south-african-smes-hits-rock-bottom.html">
+            <img src="images/mediaImg/fudging-the-figures.jpg" alt="Accounting" class="w-100">
+          </a>
+        </div>
+        <!-- text -->
+        <div class="col-sm-8">
+          <h5>Fudging the Figures - A lawyer’s guide to cutting through financial BS in business valuations</h5>
+          <small>
+            <i class="fas fa-clock"></i> 20/04/2020 
+            <i class="fas fa-folder"></i> keyword keyword keyword
+          </small>
+          <br><br>
+          <p>There’s an old adage that “the figures do not lie”, but as lawyers know, this is frequently not the case. Let’s take an all-too-familiar scenario: a high profile divorce where the non-earning spouse is seeking 50% of the spoils of marriage.
+          <br><br>
+          The bread winner will seek to downplay the quantum of assets accumulated during the marriage while their spouse will want the reverse. In fact, they will tabulate every asset they can find and ascribe the maximum possible value to each.  It can quickly become a game of cat and mouse, with one partner trying to inflate wealth, and the other trying to hide it... <a href="media/fudging-the-figures"><b>read more</b></a> </p> 
+        </div>
+      </article>
+
+    </div>
+  </section>
+  
+    <!-- <div class="container-fluid">
         <div class="row spacerOne"></div>
         <div class="row">
             <div class="col-sm-1"></div>
@@ -87,7 +154,7 @@
                 </iframe>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- Footer -->

@@ -88,6 +88,9 @@ a:hover{
     background: white;
     border-radius: 5px;
 }
+.dropdown-menu{
+    overflow-y: scroll;
+}
 
 /*--------------------------------------------------content*/
 .hideOnSmallScreen{
