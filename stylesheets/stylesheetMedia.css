@@ -1,4 +1,7 @@
-
+/* styles for main media page */
+body#media{
+    background: #f2f2f2;
+}
 .bgImage{
     width: 100%;
 }
@@ -9,140 +12,81 @@
 .topImage{
     width: 30%;
 }
-article{
-    background: #f2f2f2;
-    padding: 40px 10px;
-    margin-bottom: 40px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-.media-image{
-    margin-bottom: 40px;
-}
 article a{
     color: #ec6d62;
     font-weight: 900;;
 }
-
-/* styles for the media articles individual pages */
-.article-headline{
-    margin-top: 10vh!important;
-}
-.media-menu{
-    position: fixed;
-    left: 0;
-    top: 45vh;
-    padding: 10px;
+article h5{
     font-size: 2em;
-    border-radius: 0 5px 5px 0;
+    transition: color 0.5s;
+    transition: margin 0.5s;
 }
-.media-menu a{
-    color: white;
-}
-.media-menu a:hover{
+article h5:hover{
     color: #ec6d62;
+    margin-left: 10px;
+    transition: color 0.5s;
+    transition: margin 0.5s;
 }
-p.drop-cap:first-letter {
-    font-size: 4.5em;
-    float: left;
-    margin-top: -0.4em;
-    font-weight: 500;
+.text-snippet{
+    margin: 0 0 50px 0;
+    background: white;
+    padding: 10px;
 }
-.media-heading{
-    font-size: 2em;
-}
+
+
+/* styles for articles */
+
 section#article{
-    padding: 0 10px;
-    margin-top: 15vh;
+    margin-top: 13vh;
 }
-b{
-    text-decoration: underline;
+.media-image{
+    height: 50vh;
+    z-index: -11;
+    margin-bottom: 40px;
+}
+.media-image.sme{
+    background: url('../images/mediaImg/valuations-mobile.jpg') center center no-repeat;
+    background-size: cover;
+}
+.media-image.fudging{
+    background: url('../images/mediaImg/fudging-the-figures-mobile.jpg') center center no-repeat;
+    background-size: cover;
 }
 .media-graph{
-    max-width: 100%;
-}
-
-/* styles for podcast */
-.visually-hidden {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    padding:0 !important;
-    border:0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden;
-}
-
-/* Pcast Player */
-/* Pcast Player */
-.pcast-player .pcast-player-controls {
-    box-sizing: border-box;
-    background: #000;
-    color: #fff;
-    font-size: 14px;
-    height: 42px;
-    overflow: hidden;
-    padding: 5px;
     width: 100%;
-  }
-  .pcast-player button {
-    background: #2a2a2a;
-    color: #fff;
-    border: 0;
-    border-radius: 2px;
-    padding: 5px;
-    line-height: 22px;
-    -webkit-appreance: none;
-    min-width: 32px;
-  }
-  .pcast-player progress {
-    height: 13px;
-    width: calc(100% - 281px);
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-  }
-  .pcast-player progress[value]::-webkit-progress-bar {
-    background-color: #555;
-    border-radius: 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
-  }
-  .pcast-player progress[value]::-webkit-progress-value {
-    background: #fff;
-  }
-  .pcast-player .pcast-time {
+}
+.media-copy{
+    padding: 20px 50px;
+}
+.mini-menu{
+    font-size: 2em;
     display: inline-block;
-    font-size: 13px;
-    padding: 0 5px;
-    text-align: center;
-    width: 4em;
-  }
-  .pcast-player .pcast-speed {
-    width: 2.5em;
-  }
-  .pcast-player .pcast-download {
-    font-size: 12px;
-    margin-top: 0.5em;
-    display: inline-block;
-    color: black;
-  }
-  .pcast-player .pcast-download:hover, .pcast-player .pcast-download:focus {
-    color: #666;
-  }
+    padding: 20px;
+    border-radius: 20px;
+}
+.mini-menu a{
+    color: white;
+    padding: 0 10px;
+}
+.mini-menu a:hover{
+    color: #39546a;
+}
 
-  .wrap-left{
-      float: left;
-      margin-right: 10px;
-  }
-  .wrap-right{
-    float: right;
-    margin-left: 10px;
+/* footer */
+footer{
+    z-index: 2!important;
+}
+
+/* podcast */
+audio{
+    width: 100%;
 }
 
 /*--------------------------------------------------TABLETS*/
 @media only screen and (min-width: 768px) {
     /* For tablets: */
+
+    /* individual articles */
     .bgImage{
         margin-top: 10vh;
     }
@@ -152,23 +96,60 @@ b{
     .topImage{
         width: 20%;
     }
-    .media-image{
-        margin-bottom: 0;
-    }
-    section#article{
-        padding: 0 70px;
-    }
 }
 
+/* all large screens */
+@media only screen and (min-width: 992px){
+/* index */
+article{
+    background: none;
+    padding: 0;
+    border: none;
+    margin: 40px;
+}
+.text-snippet{
+    margin: 40px 0;
+    background: white;
+    padding: 40px;
+    transform: translateX(-100px);
+}
+.article-image{
+    transform: translateX(100px);
+    cursor: pointer;
+}
+.article-image.sme{
+    background: url('../images/mediaImg/valuations.jpg') center center no-repeat;
+    background-size: cover;
+}
+.article-image.fudging{
+    background: url('../images/mediaImg/fudging-the-figures.jpg') center center no-repeat;
+    background-size: cover;
+}
 
+}
 /*--------------------------------------------------DESKTOP: PORTRAIT*/
 @media only screen and (min-width: 992px) and (orientation : portrait) {
     /* For desktop: */
+
+    /* individual articles */
     .bgImage{
         top: 120px;
     }
     .topImage{
         width: 20%;
+    }
+    .media-image{
+        height: 87vh;
+        z-index: -11;
+        position: fixed;
+    }
+    .media-image.sme{
+        background: url('../images/mediaImg/valuations.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    .media-image.fudging{
+        background: url('../images/mediaImg/fudging-the-figures.jpg') center center no-repeat;
+        background-size: cover;
     }
 }
 
@@ -178,6 +159,19 @@ b{
     /* For desktop: */
     .topImage{
         width: 10%;
+    }
+    .media-image{
+        height: 87vh;
+        z-index: -11;
+        position: fixed;
+    }
+    .media-image.sme{
+        background: url('../images/mediaImg/valuations.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    .media-image.fudging{
+        background: url('../images/mediaImg/fudging-the-figures.jpg') center center no-repeat;
+        background-size: cover;
     }
 
 }

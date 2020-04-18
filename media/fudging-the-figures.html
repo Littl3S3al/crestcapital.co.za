@@ -1,20 +1,305 @@
-<div class="row lightBlue mb-3 p-3">
-    <div class="col-12">
-        Listen to the podcast
-    </div>
-  <div class="col-12">
-      <div class="pcast-player">
-          <div class="pcast-player-controls">
-            <button class="pcast-play"><i class="fa fa-play"></i><span>Play</span></button>
-            <button class="pcast-pause"><i class="fa fa-pause"></i><span>Pause</span></button>
-            <button class="pcast-rewind"><i class="fa fa-fast-backward"></i><span>Rewind</span></button>
-            <span class="pcast-currenttime pcast-time">00:00</span>
-            <progress class="pcast-progress" value="0"></progress>
-            <span class="pcast-duration pcast-time">00:00</span>
-            <button class="pcast-speed">1x</button>
-            <button class="pcast-mute"><i class="fa fa-volume-up"></i><span>Mute/Unmute</span></button>
-          </div>
-          <audio src="https://s3.amazonaws.com/ShopTalk/080_rapidfire_19.mp3"></audio><a class="pcast-download" href="https://s3.amazonaws.com/ShopTalk/080_rapidfire_19.mp3" download>Download MP3</a>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--custom stylesheet-->
+    <link rel="stylesheet" href="../stylesheets/stylesheetTemplate.css">
+    <link rel="stylesheet" href="../stylesheets/stylesheetMedia.css">
+
+    <!--animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    
+    <!--link to google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap" rel="stylesheet">
+
+    <!--animate on scroll-->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
+
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
+
+    <!-- link to fontawesome -->
+    <link rel="stylesheet" href="../stylesheets/fontawesome/css/all.min.css">
+
+    <title>Crest Capital Media</title>
+  </head>
+  <body>
+
+    
+    <!--navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-blue">
+         <!--navbar logo-->
+        <a class="navbar-brand" href="../home.html">
+            <div class="navLogoBg">
+                    <img class="navLogo" src="../images/crestCapitalLogo.png" width="100%" height="auto" alt="Crest Capital">
+            </div>  
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto ">
+                <li class="nav-item">
+                <a class="nav-link" href="../home.html">HOME<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="../aboutus.html">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="../ourteam.html">OUR TEAM</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    OUR SERVICES
+                    </a>
+                    <div class="dropdown-menu lightBlue" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item lightBlue" href="../ourservices.html">All Our Services</a>
+                        <a class="dropdown-item grey" href="../servicesPages/saleOfBusinessAdvisory.html">M&A - Sale of Business Advisory</a>
+                        <a class="dropdown-item lightBlue" href="../servicesPages/businessAcquisitionAdvisory.html">M&A - Business Acquisition Advisory</a>
+                        <a class="dropdown-item grey" href="../servicesPages/capitalRaising.html">Capital Raising</a>
+                        <a class="dropdown-item lightBlue" href="../servicesPages/businessValuation.html">Business Valuations</a>
+                        <a class="dropdown-item grey" href="../servicesPages/dueDiligence.html">Due Diligence</a>
+                        <a class="dropdown-item lightBlue" href="../servicesPages/strategy FormulationAndImplementation.html">Strategy formulation and implementation</a>
+                        <a class="dropdown-item grey" href="../servicesPages/employeeShareOwnershipPlanEstablishment.html">Employee share ownership plan (“ESOP”) establishment</a>
+                        <a class="dropdown-item lightBlue" href="../servicesPages/businessReEngineering.html">Business Re-Engineering</a>
+                        <a class="dropdown-item grey" href="../servicesPages/businessRecoveryAndRescue.html">Business Recovery & Rescue</a>
+                    
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../media.html">MEDIA</a>
+                </li>
+            </ul>
+            <a class="btn btn-blue" href="../contactus.html" role="button">CONTACT US</a>
         </div>
-  </div>
-</div><!--podcast player-->
+    </nav><!--navbar-->
+
+  
+
+  <!-- article content -->
+  <section id="article">
+      <div class="container-fluid m-0 p-0">
+          <div class="row">
+              <!-- fixed image -->
+              <div class="col-xs-12 col-lg-5 media-image fudging animated fadeInLeft">
+              </div>
+              <!-- media copy -->
+              <div class="col-lg-6 offset-lg-5 media-copy animated fadeInRight">
+                <div class="row">
+                    <div class="col-12 py-3 text-center">
+                        <h3>Fudging the Figures - A lawyer’s guide to cutting through financial BS in business valuations</h3>
+                        <small>
+                        <i class="fas fa-clock"></i> 20/04/2020 
+                        <i class="fas fa-folder"></i> keyword keyword keyword
+                        </small>
+                    </div><!--col-->
+
+                    <div class="col-12 my-3 p-3 rounded lightBlue">
+                      <div class="row">
+                        <div class="col-12 text-white text-center">
+                          <h4><i class="fas fa-microphone"></i> Listen to the posdcast! </h4>
+                          <p><small>Listen to David Paropoulos 12 min interview with ScottCundill.com on "Fudging the Figures - A lawyer’s guide to cutting through financial BS in business valuations"</small></p>
+                        </div>
+                        <div class="col-12 text-center">
+                          <div id="wrapper">
+                            <audio preload="auto" controls>
+                              <source src="../podcasts/Crest_Capital_Interview_with_David_Paropoulos_Scott_Cundill_Podcast.mp3" />
+                            </audio>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!--col-->
+                    
+                    <div class="col-12 py-3 text-justify">
+                        <p>
+                          There’s an old adage that “the figures do not lie”, but as lawyers know, this is frequently not the case. Let’s take an all-too-familiar scenario: a high profile divorce where the non-earning spouse is seeking 50% of the spoils of marriage.
+                          <br><br>
+                          The bread winner will seek to downplay the quantum of assets accumulated during the marriage while their spouse will want the reverse. In fact, they will tabulate every asset they can find and ascribe the maximum possible value to each.  It can quickly become a game of cat and mouse, with one partner trying to inflate wealth, and the other trying to hide it.
+                          <br><br>
+                          If the estate’s assets are limited to property, jewellery, vehicles and the like, the differences between the spouses’ valuations would not generally be significant. But what if the assets include shares in a successful, private business?  This is where the case becomes far more complicated and the stakes are raised, as there are numerous ways to materially diminish or inflate the value of a business.
+                          <br><br>
+                          As experienced litigation support and valuation experts, there is not much that we have not seen.  Lawyers are all too aware of the lengths to which estranged partners – be they marriage or business partners – will go to, to “bury the gold”.
+                        </p>
+                    </div><!--col-->
+                    <div class="col-12 grey py-4 text-center">
+                        <h5>The dark art of valuation</h5>
+                    </div><!--col-->
+                    <div class="col-12 py-3 text-justify">
+                      <p>
+                        One of our long-standing clients refers to business valuations as the “dark arts” and given the large number of subjective assumptions required to complete a valuation, and the ease with which a valuation can be manipulated, it is hard to argue with this description.
+                        <br><br>
+                        It is highly improbable that two valuation practitioners will ascribe the same value to a shareholding in a private company and in many cases the valuation range will be significant due to the application of different methodologies and key assumptions. The courts are left to decide which valuation is more credible and it is therefore imperative that a valuation expert prepares a report which demystifies the dark art of valuation to enable readers to understand the key drivers of value and gain comfort that the valuation is fair.
+                      </p>
+                  </div><!--col-->
+                  <div class="col-12 grey py-4 text-center">
+                    <h5>“One-size-fits-all” valuations</h5>
+                  </div><!--col-->
+                  <div class="col-12 py-3 text-justify">
+                    <p>
+                      To a man with a hammer everything looks like a nail. This is true of the vast majority of valuation experts with practitioners adopting their preferred valuation approach - be it discounted cash flow, earnings multiples or an asset-based approach - to all assignments, whether their favoured approach is suitable or not.
+                      <br><br>
+                      Worse still, some valuation practitioners have a “magic” earnings multiple which they apply to all privately-held companies, irrespective of the businesses’ fundamentals and growth trajectory.  In practice, such tunnel-vision typically results in the over-valuation of weak businesses and the under-valuation of strong ones.
+                    </p>
+                </div><!--col-->
+                <div class="col-12 grey py-4 text-center">
+                  <h5>“Not-so-independent” valuation experts</h5>
+                </div><!--col-->
+                <div class="col-12 py-3 text-justify">
+                  <p>
+                    Shareholders’ agreements frequently call for the incumbent auditor to perform a valuation in the case of a dispute.  Similarly, in divorce cases, the auditor is often appointed to perform the valuation due to their extensive knowledge of the business.
+                    <br><br>
+                    The appointment of an auditor into this role often proves to be problematic with their independence compromised by their desire to please the remaining shareholder (who will be an ongoing client) at the expense of the exiting shareholder.
+                    <br><br>
+                    Furthermore, the field of business valuation is highly specialised and most auditors spend an insignificant proportion of their time tending to valuation matters.  We have witnessed many cases where auditors have not been equipped to defend their valuations when challenged by an experienced professional, often leading to the auditor being forced to withdraw their valuation opinion.
+                  </p>
+              </div><!--col-->
+              <div class="col-12 grey py-4 text-center">
+                <h5>Bulletproof valuations</h5>
+              </div><!--col-->
+              <div class="col-12 py-3 text-justify">
+                <p>
+                  An expert valuer must be prepared to stand behind their valuations when giving expert testimony in court or arbitration proceedings. In our experience, if the valuation methodology is clearly articulated and all key assumptions are justified by appropriate research and reasoning, settlement is likely to occur before the matter gets to court or arbitration.
+                  <br><br>
+                  A business valuation is not an exact science - there is no definitive “right answer”.  The expert is required to prepare a valuation which is defendable in every respect. Even though there may be no right answer, there are many wrong answers which will be ruthlessly exposed by an experienced opposing valuation expert.
+                </p>
+              </div><!--col-->
+              <div class="col-12 grey py-4 text-center">
+                <h5>Does your client’s business have sufficient value to be rescued?</h5>
+              </div><!--col-->
+              <div class="col-12 py-3 text-justify">
+                <p>
+                  Business rescue is still relatively new to SA with direction being sought from the courts on a regular basis. Sadly, there are opportunistic Business Rescue Practitioners (BRPs) trawling the corporate landscape who have limited rescue and turnaround experience. Some are long standing insolvency practitioners who are well versed in closing businesses down, the antithesis of rescue.
+                  <br><br>
+                  A successful BRP must first and foremost be be a savvy businessman. Good accountants, lawyers and insolvency practitioners do not necessarily make good BRP’s. Rescue involves a deep understanding of how businesses operate; from the identification, or indeed creation of a market, to the successful delivery to market, with the main goal of turning productive efforts into cash. In a distress situation, cash certainly is king and generating cash flow with diminished resources is no easy task.
+                  <br><br>
+                  The BRP must, on the one hand, be prepared to spend weeks or months defending the company against opposing groups of creditors, while on the other hand generate sufficient working capital to lead the company out of trouble. The BRP needs a good legal team at his side to bat away the opportunists and impatient creditors, including banks, who are, understandably, solely focused on the rapid return of their money. Fortunately, the law favours the BRP, provided they are able to come up with a rescue plan that is realistic and achievable and in so doing, garners the trust and support of the majority of the creditors.
+                </p>
+              </div><!--col-->
+              <div class="col-12 grey py-4 text-center">
+                <h5>Does your client’s business have unlocked value?</h5>
+              </div><!--col-->
+              <div class="col-12 py-3 text-justify">
+                <p>
+                  Whether your client’s business is distressed or suffering from a shortage of cash, astute financial engineering can often restore the business to a healthy position. Dealt with early enough, it can lead to the avoidance of business rescue or, worse still, liquidation. Very often the main cause of distress is an inappropriate capital structure, often due to an over-investment in assets, most typically short term assets such as debtors and stock. We recently assisted a major importer of luxury goods reorganise their capital structure by changing their terms of trade thereby improving significantly on the businesses cash cycle. The business was not in distress, but the financial return to the shareholders, considering the size of the business, was paltry.  The changes recommended by us resulted in a significant increase in shareholder returns.
+                </p>
+              </div><!--col-->
+              <div class="col-12 grey py-4 text-center">
+                <h5>Value destruction through sabotage</h5>
+              </div><!--col-->
+              <div class="col-12 py-3 text-justify">
+                <p>
+                  We tend to imagine that companies fail due to market conditions beyond their control, but this is not always the case. Director and/or shareholder sabotage is more common than many would believe.
+                  <br><br>
+                  Why, one wonders, would a director or shareholder sabotage his or her own company? Very often this is caused by a breakdown in relationships between the active shareholders and the passive investor. “What’s in it for me” becomes the driving force for the shareholder who has been left to run the business.
+                  <br><br>
+                  Here’s an actual example: the directors in a South African company selling imported products from the foreign majority shareholder fell out with each other. The SA-based directors set up a competing firm. Their plan was clear: sabotage the local operation as a way to springboard their own business into immediate success. The extent and impact of their actions was devastating, including making illegal payments and false disclosures, which constituted a blatant breach of their fiduciary duties. Fortunately, we were able to protect the interests of the foreign shareholder by taking an active role in the day to day operations whilst working in tandem with a local law firm to institute legal action against the perpetrators resulting in an indictment and costs order in our client’s favour.
+                </p>
+              </div><!--col-->
+              <div class="col-12 grey py-4 text-center">
+                <h5>Valuing contractual disputes</h5>
+              </div><!--col-->
+              <div class="col-12 py-3 text-justify">
+                <p>
+                  Contractual disputes are commonplace and often require expert input in establishing the value of the disputed contract. We frequently find that the sizes of the contracting parties are vastly different, leading to the smaller contractor being bullied into accepting a lower payout, if any.
+                  <br><br>
+                  A few years ago, we assisted a small B-BBEE contractor take-on an international mining conglomerate. A contract had been unilaterally cancelled by the mining giant, claiming that the “little guy” wouldn’t be able to raise the capital required in order to meet their contractual obligations. We provided expert testimony that refuted the claim.  This really was a David versus Goliath story which culminated in the award of a multi-million rand damages settlement.
+                </p>
+              </div><!--col-->
+              <div class="col-12 grey py-4 text-center">
+                <h5>Conclusion</h5>
+              </div><!--col-->
+              <div class="col-12 py-3 text-justify">
+                <p>
+                  No matter what the valuation need, be it establishing a fair value, rescuing value or protecting value, the experience behind the establishment of value is the key to a successful outcome. While there will always be an element of uncertainty present in litigation, having a team of financial experts who are experienced in cutting through financial BS will maximize your client’s chances of securing a successful outcome.
+                </p>
+              </div><!--col-->
+
+
+                    <div class="col-12 text-center">
+                        <div class="lightBlue mini-menu">
+                            <a href="south-african-smes-hits-rock-bottom.html"><i class="fas fa-arrow-circle-left"></i><span class="sr-only">previous article</span></a>
+                        
+                            <a href="../media.html"><i class="fas fa-th-large"></i><span class="sr-only">all articles</span></a>
+                        
+                            <a href="south-african-smes-hits-rock-bottom.html"><i class="fas fa-arrow-circle-right"></i><span class="sr-only">next article</span></a> 
+                        </div>
+                    </div>
+                </div><!--row-->
+              </div><!--col: media copy-->
+          </div><!--row-->
+      </div><!--container-->
+  </section>
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small teal pt-4 white">
+
+        <!-- Footer Text -->
+        <div class="container-fluid text-center text-md-left">
+            <div class="row spacerOne hideOnMobile"></div>
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-3 mt-md-0 mt-3 text-center">
+      
+              <!-- Content -->
+              <img class="footerLogo" src="../images/crestCapitalLogo.png">
+      
+            </div>
+            <!-- Grid column -->
+      
+            <!-- Grid column -->
+            <div class="col-md-7 mb-md-0 mb-3">
+      
+              <!-- Content -->
+              <h5 class="text-uppercase font-weight-bold">Crest Capital</h5>
+              <p>Corporate finance specialists</p>
+    
+              <a href="mailto: info@crestcapital.co.za" target="_blank">info@crestcapital.co.za</a> 
+              <p class="inline"> | </p>
+              <a href="tel:0108231640" target="_blank">(+27) 10 823 1640</a>
+              <p class="inline"> | </p>
+              <a href="https://www.google.com/maps/place/The+Mall+Offices/@-26.1473619,28.0399803,17z/data=!3m1!4b1!4m5!3m4!1s0x1e950cf2d5053bcb:0xaa125331d3d3d5fb!8m2!3d-26.1473619!4d28.042169" target="_blank"> 5th floor, The Mall Offices, 11 Cradock Avenue, Rosebank 2196, South Africa
+              </a>
+            </div>
+            <!-- Grid column -->
+
+             
+      
+          </div>
+          <!-- Grid row -->
+          <div class="row spacerOne"></div>
+      
+        </div>
+        <!-- Footer Text -->
+      
+        <!-- Copyright -->
+        <div class="grey footer-copyright text-center py-3">© 2019 Copyright
+        </div>
+        <!-- Copyright -->
+      
+    </footer>
+    <!-- Footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--animate on scroll-->
+    <script src='https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js'></script>
+    <!--aos init-->
+    <script  src="scripts/script.js"></script>
+  </body>
+</html>

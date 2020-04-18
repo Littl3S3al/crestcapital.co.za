@@ -123,6 +123,9 @@ a:hover{
 .grey{
     background-color: #cccccc;
 }
+.lightGrey{
+    background: #f2f2f2;
+}
 .red{
     background-color: #ec6d62;
 }
