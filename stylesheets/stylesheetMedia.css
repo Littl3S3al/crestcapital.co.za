@@ -81,6 +81,7 @@ section#article{
 /* footer */
 footer{
     z-index: 2!important;
+    background: white;
 }
 
 
