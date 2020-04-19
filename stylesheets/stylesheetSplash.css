@@ -11,8 +11,7 @@
 }
 .splashTitle{
     width: 90%;
-    margin: 1% 5% 0 5%;
-    position: fixed;
+    margin: 0% 5% 0 5%;
 }
 .splashText{
     font-family: 'Montserrat', sans-serif;
