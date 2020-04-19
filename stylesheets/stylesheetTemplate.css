@@ -56,7 +56,6 @@ p{
 }
 a{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 00;
     color: #007daf;
     font-size: 1em; 
 }
@@ -146,7 +145,6 @@ a:hover{
 .btn-blue {
     background-image: linear-gradient(to right, #3FD1FF , #55A2FF);;
     color: white;
-    background-color: #ffffff;
     border-color: white;
     border-width: 4px;
     border-radius: 50px;
@@ -167,7 +165,6 @@ a:hover{
 .btn-yellow {
     background-image: linear-gradient(to right, #fccc38 , #f7931e);;
     color: white;
-    background-color: #ffffff;
     border-color: black;
     border-width: 4px;
     border-radius: 100px;
@@ -188,7 +185,6 @@ a:hover{
 .btn-darkBlue {
     background-image: linear-gradient(to right, #39546a , #8c9ca9);;
     color: white;
-    background-color: #ffffff;
     border-color: black;
     border-width: 4px;
     border-radius: 100px;
@@ -209,7 +205,6 @@ a:hover{
 .btn-lightBlue {
     background-image: linear-gradient(to right, #3FD1FF , #55A2FF);;
     color: white;
-    background-color: #ffffff;
     border-color: black;
     border-width: 4px;
     border-radius: 50px;
@@ -231,7 +226,6 @@ a:hover{
 .btn-red {
     background-image: linear-gradient(to right,  #f7931e, #ec6d62 );;
     color: white;
-    background-color: #ffffff;
     border-color: black;
     border-width: 4px;
     border-radius: 100px;
