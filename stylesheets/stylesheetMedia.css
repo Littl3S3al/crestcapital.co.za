@@ -52,6 +52,10 @@ section#article{
     background: url('../images/mediaImg/fudging-the-figures-mobile.jpg') center center no-repeat;
     background-size: cover;
 }
+.media-image.rescue{
+    background: url('../images/mediaImg/business-rescue.jpg') center center no-repeat;
+    background-size: cover;
+}
 .media-graph{
     width: 100%;
 }
@@ -71,16 +75,14 @@ section#article{
 .mini-menu a:hover{
     color: #39546a;
 }
-
+.wrapper{
+    width: 100%;
+}
 /* footer */
 footer{
     z-index: 2!important;
 }
 
-/* podcast */
-audio{
-
-}
 
 /*--------------------------------------------------TABLETS*/
 @media only screen and (min-width: 768px) {
@@ -100,32 +102,35 @@ audio{
 
 /* all large screens */
 @media only screen and (min-width: 992px){
-/* index */
-article{
-    background: none;
-    padding: 0;
-    border: none;
-    margin: 40px;
-}
-.text-snippet{
-    margin: 40px 0;
-    background: white;
-    padding: 40px;
-    transform: translateX(-100px);
-}
-.article-image{
-    transform: translateX(100px);
-    cursor: pointer;
-}
-.article-image.sme{
-    background: url('../images/mediaImg/valuations.jpg') center center no-repeat;
-    background-size: cover;
-}
-.article-image.fudging{
-    background: url('../images/mediaImg/fudging-the-figures.jpg') center center no-repeat;
-    background-size: cover;
-}
-
+    /* index */
+    article{
+        background: none;
+        padding: 0;
+        border: none;
+        margin: 40px;
+    }
+    .text-snippet{
+        margin: 40px 0;
+        background: white;
+        padding: 40px;
+        transform: translateX(-100px);
+    }
+    .article-image{
+        transform: translateX(100px);
+        cursor: pointer;
+    }
+    .article-image.sme{
+        background: url('../images/mediaImg/valuations.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    .article-image.fudging{
+        background: url('../images/mediaImg/fudging-the-figures.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    .article-image.rescue{
+        background: url('../images/mediaImg/business-rescue.jpg') center center no-repeat;
+        background-size: cover;
+    }
 }
 /*--------------------------------------------------DESKTOP: PORTRAIT*/
 @media only screen and (min-width: 992px) and (orientation : portrait) {
@@ -151,6 +156,10 @@ article{
         background: url('../images/mediaImg/fudging-the-figures.jpg') center center no-repeat;
         background-size: cover;
     }
+    .media-image.rescue{
+        background: url('../images/mediaImg/business-rescue.jpg') center center no-repeat;
+        background-size: cover;
+    }
 }
 
 
@@ -171,6 +180,10 @@ article{
     }
     .media-image.fudging{
         background: url('../images/mediaImg/fudging-the-figures.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    .media-image.rescue{
+        background: url('../images/mediaImg/business-rescue.jpg') center center no-repeat;
         background-size: cover;
     }
 
