@@ -2,6 +2,10 @@
 body#media{
     background: #f2f2f2;
 }
+header.container-fluid{
+    margin: 0;
+    padding: 0;
+}
 .bgImage{
     width: 100%;
 }
@@ -75,9 +79,23 @@ section#article{
 .mini-menu a:hover{
     color: #39546a;
 }
+
+
+
+/* audio */
 .wrapper{
     width: 100%;
 }
+.wrapper audio{
+    background: #cccccc!important; 
+}
+
+
+
+
+
+
+
 /* footer */
 footer{
     z-index: 2!important;
