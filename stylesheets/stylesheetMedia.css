@@ -138,8 +138,12 @@ footer{
         transform: translateX(100px);
         cursor: pointer;
     }
+    .article-image.sme2{
+        background: url('../images/mediaImg/valuations_part2.jpg') center center no-repeat;
+        background-size: cover;
+    }
     .article-image.sme{
-        background: url('../images/mediaImg/valuations.jpg') center center no-repeat;
+        background: url('../images/mediaImg/valuations_part1.jpg') center center no-repeat;
         background-size: cover;
     }
     .article-image.fudging{
