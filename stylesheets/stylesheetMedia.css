@@ -31,6 +31,11 @@ article h5:hover{
     transition: color 0.5s;
     transition: margin 0.5s;
 }
+.graph h5{
+    font-size: 2em;
+    transition: margin 0.5s;
+    color: white;
+}
 .text-snippet{
     margin: 0 0 50px 0;
     background: white;
@@ -80,7 +85,13 @@ section#article{
     color: #39546a;
 }
 
-
+/* style for chart/graph on the media page */
+.graph{
+    margin-bottom: 10vh;
+}
+.graph div{
+    padding: 10px;
+}
 
 /* audio */
 .wrapper{
@@ -117,6 +128,10 @@ footer{
     .topImage{
         width: 20%;
     }
+
+    .graph{
+        margin-bottom: 5vh;
+    }
 }
 
 /* all large screens */
@@ -128,6 +143,12 @@ footer{
         border: none;
         margin: 40px;
     }
+    .graph{
+        margin: 40px 0;
+    }
+    .graph div{
+        padding: 40px;
+    }
     .text-snippet{
         margin: 40px 0;
         background: white;
@@ -138,12 +159,8 @@ footer{
         transform: translateX(100px);
         cursor: pointer;
     }
-    .article-image.sme2{
-        background: url('../images/mediaImg/valuations_part2.jpg') center center no-repeat;
-        background-size: cover;
-    }
     .article-image.sme{
-        background: url('../images/mediaImg/valuations_part1.jpg') center center no-repeat;
+        background: url('../images/mediaImg/valuations.jpg') center center no-repeat;
         background-size: cover;
     }
     .article-image.fudging{
