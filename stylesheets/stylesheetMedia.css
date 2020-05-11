@@ -8,6 +8,7 @@ header.container-fluid{
 }
 .bgImage{
     width: 100%;
+    margin-top: -10vh;
 }
 .page-title{
     position: absolute;
@@ -120,7 +121,7 @@ footer{
 
     /* individual articles */
     .bgImage{
-        margin-top: 10vh;
+        margin-top: 0vh;
     }
     .page-title{
         top: 15vh;
@@ -178,7 +179,7 @@ footer{
 
     /* individual articles */
     .bgImage{
-        top: 120px;
+        margin-top: 10vh;
     }
     .topImage{
         width: 20%;
@@ -206,6 +207,9 @@ footer{
 /*--------------------------------------------------DESKTOP*/
 @media only screen and (min-width: 992px) and (orientation : landscape) {
     /* For desktop: */
+    .bgImage{
+        margin-top: -10vh;
+    }
     .topImage{
         width: 10%;
     }
